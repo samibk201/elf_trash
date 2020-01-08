@@ -32,7 +32,7 @@ char *read_flags (char *flag, Elf32_Word s);
 //pour afficher la section
 void print_section (FILE *file, Elf32_Shdr *T, Elf32_Ehdr *e);
 
-//recupere toutes les valeurs de la section en little endian et les met dans sectionHeader
+//la fonction recupere toutes les valeurs de la section en little endian et les met dans sectionHeader
 void get_sh_values(Elf32_Shdr **sectionHeader, FILE* f,Elf32_Ehdr *h);
 
 #endif
